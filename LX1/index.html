@@ -2,13 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>如果的如果</title>
+    <style type="text/css">
+        body{
+            background-image: url(./images/0.jpg);
+            background-size: 100% 100%;
+        }
+        html{
+            height: 100%;
+        }
+        @keyframes  myfirst {/*第一段动画*/
+            0% { opacity:0}
+            25% { opacity:100}
+            50% {opacity:0}
+            100% {opacity:0}
+        }
+        @keyframes  mysecond {/*第二段动画*/
+            0% { opacity:0}
+            25% { opacity:0}
+            50% {opacity:100}
+            75% {opacity:0}
+            100% {opacity:0}
+        }
+        @keyframes  mythird {
+            0% { opacity:0}
+            25% { opacity:0}
+            50% {opacity:0}
+            75% {opacity:100}
+            100% {opacity:0}
+        }
+        @keyframes  myfive {
+            0% { opacity:0}
+            25% { opacity:0}
+            50% { opacity:0}
+            75% {opacity:0}
+            90% {opacity:100}
+            100% {opacity:0}
+        }
+        p{
+            font-family: 华文彩云;
+            font-size: 80px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        .a1{
+            animation: myfirst 20s infinite;
+            top:20%;
+        }
+        .a2{
+            animation: mysecond 20s infinite;
+            top:40%;
+        }
+        .b1{
+            animation: mythird 20s infinite;
+            top:20%;
+        }
+        .b2{
+            animation: myfive 20s infinite;
+            top:40%;
+        }
+        /*.b3{*/
+            /*animation: myf 10s infinite;*/
+            /*top:20%;*/
+        /*}*/
+        /*.b4{*/
+            /*animation: myg 10s infinite;*/
+            /*top:40%;*/
+        /*}*/
+        /*.s5{
+            animation: s5 10s infinite;
+            top:20%;
+        }
+        .s6{
+            animation: s6 10s infinite;
+            top:40%;
+        }*/
+    </style>
 </head>
 <body>
-<h1>静夜思</h1>
-<p>如果一辈子</p>
-<p>如果我爱你</p>
-<p>如果勇敢点</p>
-<p>如果没有你</p>
+<audio src="wav/bgm.mp3"  autoplay="autoplay" loop="loop"></audio>
+<p class="a1">其实不应该对你有太多幻想</p>
+<p class="a2">可你的美却让我无法抵挡</p>
+<p class="b1">你狠心将我流放</p>
+<p class="b2">而我却依然逞强</p>
+<!--<p class="b3">憧憬着能够和你地老天荒</p>-->
+<!--<p class="b4">其实我知道自己有多么荒唐</p>-->
 </body>
 </html>
