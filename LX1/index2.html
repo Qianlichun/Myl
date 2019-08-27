@@ -8,7 +8,7 @@
 <body>
 <canvas id="canvas">当前浏览器版本不支持该版本！</canvas>
 
-<script src="../js/underscore-min.js"></script>
+<script src="js/underscore-min.js"></script>
 <script>
     //1.获取当前的画布
     const canvas=document.getElementById('canvas');
@@ -42,7 +42,7 @@
             ctx.fill();
             ctx.restore();
             var img=new Image();
-            img.src="../images/111.png";
+            img.src="images/111.png";
             ctx.drawImage(img,this.x-20,this.y-20,this.imgW,this.imgH);
 
         }
