@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <title>XXX生日快乐</title>
+    <title>敦敦圆生日快乐</title>
 
     <style>
         html,body{
@@ -252,21 +252,6 @@
         ctx.clearRect(0,0,cx*2,cy*2);
 
         ctx.fillStyle="#ff8";
-        for(i=-100;i<100;i+=3){
-            for(j=-100;j<100;j+=4){
-                x=i;z=j;y=25;
-                point=rasterizePoint(x,y,z);
-                if(point.d!=-1){
-                    size=250/(1+point.d);
-                    d = Math.sqrt(x * x + z * z);
-                    a = 0.75 - Math.pow(d / 100, 6) * 0.75;
-                    if(a>0){
-                        ctx.globalAlpha = a;
-                        ctx.fillRect(point.x-size/2,point.y-size/2,size,size);
-                    }
-                }
-            }
-        }
         ctx.globalAlpha=1;
         for(i=0;i<seeds.length;++i){
             point=rasterizePoint(seeds[i].x,seeds[i].y,seeds[i].z);
